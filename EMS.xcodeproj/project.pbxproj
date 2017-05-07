@@ -6,10 +6,29 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		BA0CD52F1EBF161A00020485 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BA0CD5301EBF161A00020485 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				BA0CD5331EBF161F00020485 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		BA0CD5241EBEF71800020485 /* EMS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD5221EBEF71800020485 /* EMS.xcdatamodeld */; };
 		BA0CD5281EBEF9AD00020485 /* EmployeeListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD5271EBEF9AD00020485 /* EmployeeListDataProvider.swift */; };
 		BA0CD52A1EBEFA7B00020485 /* EmployeeListDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD5291EBEFA7B00020485 /* EmployeeListDataProviderProtocol.swift */; };
+		BA0CD53A1EBF165700020485 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD5371EBF165700020485 /* CoreDataStack.swift */; };
+		BA0CD53B1EBF165700020485 /* EMS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD5381EBF165700020485 /* EMS.xcdatamodeld */; };
+		BA0CD5431EBF17B100020485 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD53E1EBF17B100020485 /* Address.swift */; };
+		BA0CD5441EBF17B100020485 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD53F1EBF17B100020485 /* Employee.swift */; };
+		BA0CD5451EBF17B100020485 /* _Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD5411EBF17B100020485 /* _Address.swift */; };
+		BA0CD5461EBF17B100020485 /* _Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD5421EBF17B100020485 /* _Employee.swift */; };
 		BA1FB0DA1EBBF611000B0671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FB0D91EBBF611000B0671 /* AppDelegate.swift */; };
 		BA1FB0DF1EBBF611000B0671 /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FB0DE1EBBF611000B0671 /* EmployeeListViewController.swift */; };
 		BA1FB0E11EBBF611000B0671 /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FB0E01EBBF611000B0671 /* EmployeeDetailViewController.swift */; };
@@ -17,7 +36,6 @@
 		BA1FB0E61EBBF611000B0671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1FB0E51EBBF611000B0671 /* Assets.xcassets */; };
 		BA1FB0E91EBBF611000B0671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1FB0E71EBBF611000B0671 /* LaunchScreen.storyboard */; };
 		BA1FB0F41EBBF611000B0671 /* EMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FB0F31EBBF611000B0671 /* EMSTests.swift */; };
-		BA1FB0FF1EBC0C7B000B0671 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FB0FE1EBC0C7B000B0671 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BA0CD5231EBEF71800020485 /* EMS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EMS.xcdatamodel; sourceTree = "<group>"; };
 		BA0CD5271EBEF9AD00020485 /* EmployeeListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListDataProvider.swift; sourceTree = "<group>"; };
 		BA0CD5291EBEFA7B00020485 /* EmployeeListDataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListDataProviderProtocol.swift; sourceTree = "<group>"; };
+		BA0CD5371EBF165700020485 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		BA0CD5391EBF165700020485 /* EMS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EMS.xcdatamodel; sourceTree = "<group>"; };
+		BA0CD53E1EBF17B100020485 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		BA0CD53F1EBF17B100020485 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		BA0CD5411EBF17B100020485 /* _Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Address.swift; sourceTree = "<group>"; };
+		BA0CD5421EBF17B100020485 /* _Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Employee.swift; sourceTree = "<group>"; };
+		BA0CD5471EBF1B7B00020485 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BA0CD5481EBF1B8600020485 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		BA1FB0D61EBBF611000B0671 /* EMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1FB0D91EBBF611000B0671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA1FB0DE1EBBF611000B0671 /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +70,6 @@
 		BA1FB0EF1EBBF611000B0671 /* EMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1FB0F31EBBF611000B0671 /* EMSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMSTests.swift; sourceTree = "<group>"; };
 		BA1FB0F51EBBF611000B0671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA1FB0FE1EBC0C7B000B0671 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +90,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA0CD5361EBF165700020485 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BA0CD5381EBF165700020485 /* EMS.xcdatamodeld */,
+				BA0CD5371EBF165700020485 /* CoreDataStack.swift */,
+				BA0CD53C1EBF17B100020485 /* Model */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		BA0CD53C1EBF17B100020485 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA0CD53D1EBF17B100020485 /* Human */,
+				BA0CD5401EBF17B100020485 /* Machine */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA0CD53D1EBF17B100020485 /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				BA0CD53E1EBF17B100020485 /* Address.swift */,
+				BA0CD53F1EBF17B100020485 /* Employee.swift */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		BA0CD5401EBF17B100020485 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				BA0CD5411EBF17B100020485 /* _Address.swift */,
+				BA0CD5421EBF17B100020485 /* _Employee.swift */,
+			);
+			path = Machine;
+			sourceTree = "<group>";
+		};
 		BA1FB0CD1EBBF611000B0671 = {
 			isa = PBXGroup;
 			children = (
@@ -96,8 +157,9 @@
 				BA1FB0E51EBBF611000B0671 /* Assets.xcassets */,
 				BA1FB0E71EBBF611000B0671 /* LaunchScreen.storyboard */,
 				BA1FB0EA1EBBF611000B0671 /* Info.plist */,
-				BA0CD5221EBEF71800020485 /* EMS.xcdatamodeld */,
-				BA1FB0FE1EBC0C7B000B0671 /* CoreDataStack.swift */,
+				BA0CD5361EBF165700020485 /* Database */,
+				BA0CD5471EBF1B7B00020485 /* README.md */,
+				BA0CD5481EBF1B8600020485 /* .travis.yml */,
 			);
 			path = EMS;
 			sourceTree = "<group>";
@@ -159,6 +221,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Hanuman;
 				TargetAttributes = {
+					BA0CD52F1EBF161A00020485 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					BA1FB0D51EBBF611000B0671 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -185,6 +251,7 @@
 			targets = (
 				BA1FB0D51EBBF611000B0671 /* EMS */,
 				BA1FB0EE1EBBF611000B0671 /* EMSTests */,
+				BA0CD52F1EBF161A00020485 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -209,18 +276,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA0CD5331EBF161F00020485 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#! /bin/sh\n\n#project folders paths\nPROJECT_SRC_FOLDER=${PROJECT_DIR}/${PROJECT_NAME}\n\n#model name\nMODEL_NAME=\"EMS\"\n\n#model paths\nMODEL_DIR=\"${PROJECT_SRC_FOLDER}/Database/$MODEL_NAME.xcdatamodeld\"\nCURRENT_VERSION=`/usr/libexec/PlistBuddy -c \"print _XCCurrentVersionName\" \"$MODEL_DIR/.xccurrentversion\" `\n#CURRENT_VERSION=\"$MODEL_NAME.xcdatamodel\"\n\n#core data generated files paths\nCORE_DATA_FILES_DIR=\"${PROJECT_SRC_FOLDER}/Database/Model\"\nCORE_DATA_MACHINE_FILES_DIR=\"${CORE_DATA_FILES_DIR}/Machine\"\nCORE_DATA_HUMAN_FILES_DIR=\"${CORE_DATA_FILES_DIR}/Human\"\n\necho \"Locating mogenerator executable path...\"\nif [ -x /usr/local/bin/mogenerator ]; then\necho \"mogenerator executable found in /usr/local/bin\";\nMOGENERATOR_DIR=\"/usr/local/bin\";\nelif [ -x /usr/bin/mogenerator ]; then\necho \"mogenerator executable found in /usr/bin\";\nMOGENERATOR_DIR=\"/usr/bin\";\nelse\necho \"mogenerator executable not found\"; exit 1;\nfi\n\necho \"Running mogenerator for model: ${CURRENT_VERSION}\"\n\n$MOGENERATOR_DIR/mogenerator --swift --template-var arc=true --template-var frc=true \\\n-m \"${MODEL_DIR}/${CURRENT_VERSION}\" \\\n-M \"${CORE_DATA_MACHINE_FILES_DIR}\" \\\n-H \"${CORE_DATA_HUMAN_FILES_DIR}\"\n\necho \"Output Machine files directory: ${CORE_DATA_MACHINE_FILES_DIR}\"\necho \"Output Human files directory: ${CORE_DATA_HUMAN_FILES_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA1FB0D21EBBF611000B0671 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0CD5431EBF17B100020485 /* Address.swift in Sources */,
+				BA0CD53B1EBF165700020485 /* EMS.xcdatamodeld in Sources */,
 				BA1FB0DA1EBBF611000B0671 /* AppDelegate.swift in Sources */,
+				BA0CD5441EBF17B100020485 /* Employee.swift in Sources */,
 				BA1FB0DF1EBBF611000B0671 /* EmployeeListViewController.swift in Sources */,
-				BA0CD5241EBEF71800020485 /* EMS.xcdatamodeld in Sources */,
 				BA1FB0E11EBBF611000B0671 /* EmployeeDetailViewController.swift in Sources */,
 				BA0CD52A1EBEFA7B00020485 /* EmployeeListDataProviderProtocol.swift in Sources */,
-				BA1FB0FF1EBC0C7B000B0671 /* CoreDataStack.swift in Sources */,
 				BA0CD5281EBEF9AD00020485 /* EmployeeListDataProvider.swift in Sources */,
+				BA0CD5461EBF17B100020485 /* _Employee.swift in Sources */,
+				BA0CD53A1EBF165700020485 /* CoreDataStack.swift in Sources */,
+				BA0CD5451EBF17B100020485 /* _Address.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +349,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BA0CD5311EBF161A00020485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA0CD5321EBF161A00020485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BA1FB0F61EBBF611000B0671 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -410,6 +511,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BA0CD5301EBF161A00020485 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0CD5311EBF161A00020485 /* Debug */,
+				BA0CD5321EBF161A00020485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BA1FB0D11EBBF611000B0671 /* Build configuration list for PBXProject "EMS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -440,12 +549,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BA0CD5221EBEF71800020485 /* EMS.xcdatamodeld */ = {
+		BA0CD5381EBF165700020485 /* EMS.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BA0CD5231EBEF71800020485 /* EMS.xcdatamodel */,
+				BA0CD5391EBF165700020485 /* EMS.xcdatamodel */,
 			);
-			currentVersion = BA0CD5231EBEF71800020485 /* EMS.xcdatamodel */;
+			currentVersion = BA0CD5391EBF165700020485 /* EMS.xcdatamodel */;
 			path = EMS.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
