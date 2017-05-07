@@ -57,6 +57,8 @@
 		BA0CD53F1EBF17B100020485 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		BA0CD5411EBF17B100020485 /* _Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Address.swift; sourceTree = "<group>"; };
 		BA0CD5421EBF17B100020485 /* _Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Employee.swift; sourceTree = "<group>"; };
+		BA0CD5471EBF1B7B00020485 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BA0CD5481EBF1B8600020485 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		BA1FB0D61EBBF611000B0671 /* EMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1FB0D91EBBF611000B0671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA1FB0DE1EBBF611000B0671 /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,8 @@
 				BA1FB0E71EBBF611000B0671 /* LaunchScreen.storyboard */,
 				BA1FB0EA1EBBF611000B0671 /* Info.plist */,
 				BA0CD5361EBF165700020485 /* Database */,
+				BA0CD5471EBF1B7B00020485 /* README.md */,
+				BA0CD5481EBF1B8600020485 /* .travis.yml */,
 			);
 			path = EMS;
 			sourceTree = "<group>";
