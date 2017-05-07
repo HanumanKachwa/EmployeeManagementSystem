@@ -11,7 +11,6 @@ import CoreData
 import Eureka
 
 class EmployeeAddViewController: FormViewController {
-    var dataProvider: EmployeeAddDataProvider?
     var employee = Employee(context: CoreDataStack.sharedStack.persistentContainer.viewContext)
     let imageStore = ImageStore()
 
@@ -20,8 +19,6 @@ class EmployeeAddViewController: FormViewController {
         // Do any additional setup after loading the view, typically from a nib.
         employee.empID = Employee.getNextEmployeeId()
 
-        dataProvider = EmployeeAddDataProvider()
-        assert(dataProvider != nil, "dataProvider is not allowed to be nil at this point")
         initializeForm()
     }
     
@@ -33,7 +30,19 @@ class EmployeeAddViewController: FormViewController {
         DateRow.defaultRowInitializer = { row in row.minimumDate = Date() }
 
         form +++
-            NameRow(){ row in
+            EmailRow() {
+                $0.title = "Email"
+                $0.placeholder = "example@domain.com.au"
+                $0.add(rule: RuleRequired())
+                var ruleSet = RuleSet<String>()
+                ruleSet.add(rule: RuleRequired())
+                ruleSet.add(rule: RuleEmail())
+                $0.add(ruleSet: ruleSet)
+                $0.validationOptions = .validatesOnChangeAfterBlurred
+                }.onChange { row in
+                    self.employee.email = row.value!
+            }
+            <<< NameRow(){ row in
                 row.title = "First Name"
                 row.placeholder = "Enter name here"
                 row.add(rule: RuleRequired())
@@ -72,18 +81,6 @@ class EmployeeAddViewController: FormViewController {
                 }).onChange { row in
                     self.employee.gender = row.value.map { $0.rawValue }
             }
-            <<< EmailRow() {
-                $0.title = "Email"
-                $0.placeholder = "a@b.com.au"
-                $0.add(rule: RuleRequired())
-                var ruleSet = RuleSet<String>()
-                ruleSet.add(rule: RuleRequired())
-                ruleSet.add(rule: RuleEmail())
-                $0.add(ruleSet: ruleSet)
-                $0.validationOptions = .validatesOnChangeAfterBlurred
-            }.onChange { row in
-                    self.employee.email = row.value
-            }
             <<< DateRow(){
                 $0.title = "DOB"
                 $0.value = Date(timeIntervalSinceNow: -100*365*24*60*60)
@@ -101,8 +98,13 @@ class EmployeeAddViewController: FormViewController {
     }
 
     @IBAction func didTapSaveBtn(_ sender: Any) {
-        dataProvider?.addEmployee(employee)
-        self.dismiss(animated: true, completion: nil)
+        if let error = Employee.addEmployee(employee) {
+            displayAlert(withTitle: "Employee could not be added!", message: error.localizedDescription)
+        }else {
+            displayAlert(withTitle: "Info", message: "Employee added successfully", defaultButtonTitle: "OK", completion: { 
+                self.dismiss(animated: true, completion: nil)
+            })
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -112,6 +114,19 @@ class EmployeeAddViewController: FormViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    
+    typealias VoidParameterReturn = (() -> Void)
+    func displayAlert(withTitle title: String = "", message: String = "", defaultButtonTitle: String = "OK", completion: VoidParameterReturn? = nil) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: defaultButtonTitle, style: .default) { (action:UIAlertAction!) -> Void in
+            if let completion = completion {
+                completion()
+            }
+        }
+        alertController.addAction(alertAction)
+        self.present(alertController, animated: true, completion: { })
     }
 }
 

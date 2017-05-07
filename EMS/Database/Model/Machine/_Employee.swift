@@ -51,7 +51,7 @@ open class _Employee: NSManagedObject {
     var dateOfBirth: Date?
 
     @NSManaged open
-    var email: String?
+    var email: String
 
     @NSManaged open
     var empID: NSNumber?

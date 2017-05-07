@@ -42,7 +42,7 @@
 		BA7D67581EBF2D96004F873E /* EmployeeAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D67571EBF2D96004F873E /* EmployeeAddViewController.swift */; };
 		BA7D67601EBF395A004F873E /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D675E1EBF395A004F873E /* ImagePickerController.swift */; };
 		BA7D67611EBF395A004F873E /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D675F1EBF395A004F873E /* ImageRow.swift */; };
-		BA7D67631EBF3DA2004F873E /* EmployeeAddDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D67621EBF3DA2004F873E /* EmployeeAddDataProvider.swift */; };
+		BA7D67671EBF58A6004F873E /* XCTestCase+CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D67661EBF58A6004F873E /* XCTestCase+CoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +84,7 @@
 		BA7D67571EBF2D96004F873E /* EmployeeAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeAddViewController.swift; sourceTree = "<group>"; };
 		BA7D675E1EBF395A004F873E /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 		BA7D675F1EBF395A004F873E /* ImageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
-		BA7D67621EBF3DA2004F873E /* EmployeeAddDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeAddDataProvider.swift; sourceTree = "<group>"; };
+		BA7D67661EBF58A6004F873E /* XCTestCase+CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+CoreDataHelper.swift"; sourceTree = "<group>"; };
 		D537B3DF24497796843A0544 /* Pods_EMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -194,7 +194,6 @@
 				BA0CD54D1EBF21AA00020485 /* ImageStore.swift */,
 				BA1FB0E01EBBF611000B0671 /* EmployeeDetailViewController.swift */,
 				BA7D67571EBF2D96004F873E /* EmployeeAddViewController.swift */,
-				BA7D67621EBF3DA2004F873E /* EmployeeAddDataProvider.swift */,
 				BA7D675C1EBF395A004F873E /* CustomRows */,
 				BA1FB0E21EBBF611000B0671 /* Main.storyboard */,
 				BA1FB0E51EBBF611000B0671 /* Assets.xcassets */,
@@ -208,6 +207,7 @@
 		BA1FB0F21EBBF611000B0671 /* EMSTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA7D67661EBF58A6004F873E /* XCTestCase+CoreDataHelper.swift */,
 				BA1FB0F31EBBF611000B0671 /* EMSTests.swift */,
 				BA1FB0F51EBBF611000B0671 /* Info.plist */,
 			);
@@ -418,7 +418,6 @@
 				BA0CD5461EBF17B100020485 /* _Employee.swift in Sources */,
 				BA0CD53A1EBF165700020485 /* CoreDataStack.swift in Sources */,
 				BA0CD5451EBF17B100020485 /* _Address.swift in Sources */,
-				BA7D67631EBF3DA2004F873E /* EmployeeAddDataProvider.swift in Sources */,
 				BA0CD54E1EBF21AA00020485 /* ImageStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA1FB0F41EBBF611000B0671 /* EMSTests.swift in Sources */,
+				BA7D67671EBF58A6004F873E /* XCTestCase+CoreDataHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
