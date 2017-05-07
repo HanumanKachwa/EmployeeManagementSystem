@@ -1,9 +1,9 @@
 language: objective-c
 osx_image: xcode8.2
-xcode_project: EMS.xcodeproj
-xcode_scheme: EMS
+xcode_workspace: EMS.xcworkspace
+xcode_scheme: EMSTests
 xcode_sdk: iphonesimulator10.2
 before_install:
 - gem install xcpretty
 script:
-- xcodebuild -scheme EMS -project EMS.xcodeproj -configuration 'Debug' -destination "platform=iOS Simulator,name=iPhone 7,OS=10.2" clean build test
+- xcodebuild -scheme EMS -workspace EMS.xcworkspace -configuration 'Debug' -destination "platform=iOS Simulator,name=iPhone 7,OS=10.2" clean build test
