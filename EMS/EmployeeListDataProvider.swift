@@ -16,30 +16,14 @@ open class EmployeeListDataProvider: NSObject, EmployeeListDataProviderProtocol 
     var _fetchedResultsController: NSFetchedResultsController<Employee>? = nil
     
     let dateFormatter: DateFormatter
-    
+    let imageStore = ImageStore()
+
     override public init() {
         dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .long
         dateFormatter.timeStyle = .none
         
         super.init()
-    }
-
-    open func addEmployee(_ employee: Employee) {
-        let context = self.fetchedResultsController.managedObjectContext
-        let newEmployee = Employee(context: context)
-        newEmployee.timestamp = Date()
-        
-        // Save the context.
-        do {
-            try context.save()
-        } catch {
-            // Replace this implementation with code to handle the error appropriately.
-            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            let nserror = error as NSError
-            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-        }
-
     }
 }
 
@@ -55,7 +39,7 @@ extension EmployeeListDataProvider: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "employeeListTableViewCell", for: indexPath)
         let employee = self.fetchedResultsController.object(at: indexPath)
         self.configureCell(cell, withEmployee: employee)
         return cell
@@ -69,7 +53,8 @@ extension EmployeeListDataProvider: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let context = self.fetchedResultsController.managedObjectContext
-            context.delete(self.fetchedResultsController.object(at: indexPath))
+            let employee = self.fetchedResultsController.object(at: indexPath)
+            employee.status = NSNumber(value: false)
             
             do {
                 try context.save()
@@ -83,7 +68,19 @@ extension EmployeeListDataProvider: UITableViewDataSource {
     }
     
     func configureCell(_ cell: UITableViewCell, withEmployee employee: Employee) {
-        cell.textLabel!.text = employee.timestamp!.description
+        if let empTableViewCell = cell as? EmployeeListTableViewCell {
+            empTableViewCell.profileImageView?.image = UIImage(named: "profile_default")
+            if (employee.profilePicture != nil) {
+                if let image = imageStore.imageForKey(employee.profilePicture!) {
+                    empTableViewCell.profileImageView?.image = image
+                }
+            }
+
+            empTableViewCell.nameLabel.text = employee.employeeName()
+            empTableViewCell.empIdLabel.text = String(format:"#%d", (employee.empID?.intValue)!)
+            empTableViewCell.mobileLabel.text = employee.phoneNumber
+            empTableViewCell.emailLabel.text = employee.email
+        }
     }
 }
 
@@ -94,7 +91,7 @@ extension EmployeeListDataProvider: NSFetchedResultsControllerDelegate {
             return _fetchedResultsController!
         }
         
-        let fetchRequest: NSFetchRequest<Employee> = Employee.fetchRequest()
+        let fetchRequest: NSFetchRequest<Employee> = Employee.fetchAllActiveEmployeesRequest()
         
         // Set the batch size to a suitable number.
         fetchRequest.fetchBatchSize = 20
@@ -163,4 +160,14 @@ extension EmployeeListDataProvider: NSFetchedResultsControllerDelegate {
      }
      */
     
+}
+
+extension EmployeeListDataProvider {
+    public func getSelectedEmployee() -> Employee? {
+        if let indexPath = self.tableView.indexPathForSelectedRow {
+            let object = self.fetchedResultsController.object(at: indexPath)
+            return object
+        }
+        return nil
+    }
 }

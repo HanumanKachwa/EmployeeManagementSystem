@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		A9ABE02D105D9BCF95A7A224 /* Pods_EMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D537B3DF24497796843A0544 /* Pods_EMS.framework */; };
 		BA0CD5281EBEF9AD00020485 /* EmployeeListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD5271EBEF9AD00020485 /* EmployeeListDataProvider.swift */; };
 		BA0CD52A1EBEFA7B00020485 /* EmployeeListDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD5291EBEFA7B00020485 /* EmployeeListDataProviderProtocol.swift */; };
 		BA0CD53A1EBF165700020485 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD5371EBF165700020485 /* CoreDataStack.swift */; };
@@ -29,6 +30,7 @@
 		BA0CD5441EBF17B100020485 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD53F1EBF17B100020485 /* Employee.swift */; };
 		BA0CD5451EBF17B100020485 /* _Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD5411EBF17B100020485 /* _Address.swift */; };
 		BA0CD5461EBF17B100020485 /* _Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD5421EBF17B100020485 /* _Employee.swift */; };
+		BA0CD54E1EBF21AA00020485 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD54D1EBF21AA00020485 /* ImageStore.swift */; };
 		BA1FB0DA1EBBF611000B0671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FB0D91EBBF611000B0671 /* AppDelegate.swift */; };
 		BA1FB0DF1EBBF611000B0671 /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FB0DE1EBBF611000B0671 /* EmployeeListViewController.swift */; };
 		BA1FB0E11EBBF611000B0671 /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FB0E01EBBF611000B0671 /* EmployeeDetailViewController.swift */; };
@@ -36,6 +38,11 @@
 		BA1FB0E61EBBF611000B0671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1FB0E51EBBF611000B0671 /* Assets.xcassets */; };
 		BA1FB0E91EBBF611000B0671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1FB0E71EBBF611000B0671 /* LaunchScreen.storyboard */; };
 		BA1FB0F41EBBF611000B0671 /* EMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1FB0F31EBBF611000B0671 /* EMSTests.swift */; };
+		BA7D67561EBF259E004F873E /* EmployeeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D67551EBF259E004F873E /* EmployeeListTableViewCell.swift */; };
+		BA7D67581EBF2D96004F873E /* EmployeeAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D67571EBF2D96004F873E /* EmployeeAddViewController.swift */; };
+		BA7D67601EBF395A004F873E /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D675E1EBF395A004F873E /* ImagePickerController.swift */; };
+		BA7D67611EBF395A004F873E /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D675F1EBF395A004F873E /* ImageRow.swift */; };
+		BA7D67671EBF58A6004F873E /* XCTestCase+CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D67661EBF58A6004F873E /* XCTestCase+CoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53F34495D4EE6E3BC5B4EB92 /* Pods-EMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EMS/Pods-EMS.debug.xcconfig"; sourceTree = "<group>"; };
+		6C93CB60D4838BDBC3300071 /* Pods-EMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMS.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMS/Pods-EMS.release.xcconfig"; sourceTree = "<group>"; };
 		BA0CD5271EBEF9AD00020485 /* EmployeeListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListDataProvider.swift; sourceTree = "<group>"; };
 		BA0CD5291EBEFA7B00020485 /* EmployeeListDataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListDataProviderProtocol.swift; sourceTree = "<group>"; };
 		BA0CD5371EBF165700020485 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -59,6 +68,7 @@
 		BA0CD5421EBF17B100020485 /* _Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Employee.swift; sourceTree = "<group>"; };
 		BA0CD54B1EBF1D4A00020485 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		BA0CD54C1EBF1D4A00020485 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BA0CD54D1EBF21AA00020485 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		BA1FB0D61EBBF611000B0671 /* EMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1FB0D91EBBF611000B0671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA1FB0DE1EBBF611000B0671 /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +80,12 @@
 		BA1FB0EF1EBBF611000B0671 /* EMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1FB0F31EBBF611000B0671 /* EMSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMSTests.swift; sourceTree = "<group>"; };
 		BA1FB0F51EBBF611000B0671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA7D67551EBF259E004F873E /* EmployeeListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListTableViewCell.swift; sourceTree = "<group>"; };
+		BA7D67571EBF2D96004F873E /* EmployeeAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeAddViewController.swift; sourceTree = "<group>"; };
+		BA7D675E1EBF395A004F873E /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		BA7D675F1EBF395A004F873E /* ImageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
+		BA7D67661EBF58A6004F873E /* XCTestCase+CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+CoreDataHelper.swift"; sourceTree = "<group>"; };
+		D537B3DF24497796843A0544 /* Pods_EMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9ABE02D105D9BCF95A7A224 /* Pods_EMS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		077565D2B4DBD3520F66277A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53F34495D4EE6E3BC5B4EB92 /* Pods-EMS.debug.xcconfig */,
+				6C93CB60D4838BDBC3300071 /* Pods-EMS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6DBE94405BDA71063BE80A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D537B3DF24497796843A0544 /* Pods_EMS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA0CD5361EBF165700020485 /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +169,8 @@
 				BA0CD54C1EBF1D4A00020485 /* README.md */,
 				BA1FB0F21EBBF611000B0671 /* EMSTests */,
 				BA1FB0D71EBBF611000B0671 /* Products */,
+				077565D2B4DBD3520F66277A /* Pods */,
+				B6DBE94405BDA71063BE80A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,7 +190,11 @@
 				BA1FB0DE1EBBF611000B0671 /* EmployeeListViewController.swift */,
 				BA0CD5271EBEF9AD00020485 /* EmployeeListDataProvider.swift */,
 				BA0CD5291EBEFA7B00020485 /* EmployeeListDataProviderProtocol.swift */,
+				BA7D67551EBF259E004F873E /* EmployeeListTableViewCell.swift */,
+				BA0CD54D1EBF21AA00020485 /* ImageStore.swift */,
 				BA1FB0E01EBBF611000B0671 /* EmployeeDetailViewController.swift */,
+				BA7D67571EBF2D96004F873E /* EmployeeAddViewController.swift */,
+				BA7D675C1EBF395A004F873E /* CustomRows */,
 				BA1FB0E21EBBF611000B0671 /* Main.storyboard */,
 				BA1FB0E51EBBF611000B0671 /* Assets.xcassets */,
 				BA1FB0E71EBBF611000B0671 /* LaunchScreen.storyboard */,
@@ -167,10 +207,28 @@
 		BA1FB0F21EBBF611000B0671 /* EMSTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA7D67661EBF58A6004F873E /* XCTestCase+CoreDataHelper.swift */,
 				BA1FB0F31EBBF611000B0671 /* EMSTests.swift */,
 				BA1FB0F51EBBF611000B0671 /* Info.plist */,
 			);
 			path = EMSTests;
+			sourceTree = "<group>";
+		};
+		BA7D675C1EBF395A004F873E /* CustomRows */ = {
+			isa = PBXGroup;
+			children = (
+				BA7D675D1EBF395A004F873E /* ImageRow */,
+			);
+			path = CustomRows;
+			sourceTree = "<group>";
+		};
+		BA7D675D1EBF395A004F873E /* ImageRow */ = {
+			isa = PBXGroup;
+			children = (
+				BA7D675E1EBF395A004F873E /* ImagePickerController.swift */,
+				BA7D675F1EBF395A004F873E /* ImageRow.swift */,
+			);
+			path = ImageRow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +238,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA1FB0F81EBBF611000B0671 /* Build configuration list for PBXNativeTarget "EMS" */;
 			buildPhases = (
+				38C99EFAA3D1A3B273F39FBA /* [CP] Check Pods Manifest.lock */,
 				BA1FB0D21EBBF611000B0671 /* Sources */,
 				BA1FB0D31EBBF611000B0671 /* Frameworks */,
 				BA1FB0D41EBBF611000B0671 /* Resources */,
+				5F7CB3CD0A33A342C107E703 /* [CP] Embed Pods Frameworks */,
+				BCE29556E91320E90A791B0B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,6 +338,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		38C99EFAA3D1A3B273F39FBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F7CB3CD0A33A342C107E703 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EMS/Pods-EMS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BA0CD5331EBF161F00020485 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +381,21 @@
 			shellPath = /bin/sh;
 			shellScript = "#! /bin/sh\n\n#project folders paths\nPROJECT_SRC_FOLDER=${PROJECT_DIR}/${PROJECT_NAME}\n\n#model name\nMODEL_NAME=\"EMS\"\n\n#model paths\nMODEL_DIR=\"${PROJECT_SRC_FOLDER}/Database/$MODEL_NAME.xcdatamodeld\"\nCURRENT_VERSION=`/usr/libexec/PlistBuddy -c \"print _XCCurrentVersionName\" \"$MODEL_DIR/.xccurrentversion\" `\n#CURRENT_VERSION=\"$MODEL_NAME.xcdatamodel\"\n\n#core data generated files paths\nCORE_DATA_FILES_DIR=\"${PROJECT_SRC_FOLDER}/Database/Model\"\nCORE_DATA_MACHINE_FILES_DIR=\"${CORE_DATA_FILES_DIR}/Machine\"\nCORE_DATA_HUMAN_FILES_DIR=\"${CORE_DATA_FILES_DIR}/Human\"\n\necho \"Locating mogenerator executable path...\"\nif [ -x /usr/local/bin/mogenerator ]; then\necho \"mogenerator executable found in /usr/local/bin\";\nMOGENERATOR_DIR=\"/usr/local/bin\";\nelif [ -x /usr/bin/mogenerator ]; then\necho \"mogenerator executable found in /usr/bin\";\nMOGENERATOR_DIR=\"/usr/bin\";\nelse\necho \"mogenerator executable not found\"; exit 1;\nfi\n\necho \"Running mogenerator for model: ${CURRENT_VERSION}\"\n\n$MOGENERATOR_DIR/mogenerator --swift --template-var arc=true --template-var frc=true \\\n-m \"${MODEL_DIR}/${CURRENT_VERSION}\" \\\n-M \"${CORE_DATA_MACHINE_FILES_DIR}\" \\\n-H \"${CORE_DATA_HUMAN_FILES_DIR}\"\n\necho \"Output Machine files directory: ${CORE_DATA_MACHINE_FILES_DIR}\"\necho \"Output Human files directory: ${CORE_DATA_HUMAN_FILES_DIR}\"";
 		};
+		BCE29556E91320E90A791B0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EMS/Pods-EMS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -301,13 +407,18 @@
 				BA0CD53B1EBF165700020485 /* EMS.xcdatamodeld in Sources */,
 				BA1FB0DA1EBBF611000B0671 /* AppDelegate.swift in Sources */,
 				BA0CD5441EBF17B100020485 /* Employee.swift in Sources */,
+				BA7D67581EBF2D96004F873E /* EmployeeAddViewController.swift in Sources */,
 				BA1FB0DF1EBBF611000B0671 /* EmployeeListViewController.swift in Sources */,
 				BA1FB0E11EBBF611000B0671 /* EmployeeDetailViewController.swift in Sources */,
 				BA0CD52A1EBEFA7B00020485 /* EmployeeListDataProviderProtocol.swift in Sources */,
+				BA7D67561EBF259E004F873E /* EmployeeListTableViewCell.swift in Sources */,
 				BA0CD5281EBEF9AD00020485 /* EmployeeListDataProvider.swift in Sources */,
+				BA7D67611EBF395A004F873E /* ImageRow.swift in Sources */,
+				BA7D67601EBF395A004F873E /* ImagePickerController.swift in Sources */,
 				BA0CD5461EBF17B100020485 /* _Employee.swift in Sources */,
 				BA0CD53A1EBF165700020485 /* CoreDataStack.swift in Sources */,
 				BA0CD5451EBF17B100020485 /* _Address.swift in Sources */,
+				BA0CD54E1EBF21AA00020485 /* ImageStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA1FB0F41EBBF611000B0671 /* EMSTests.swift in Sources */,
+				BA7D67671EBF58A6004F873E /* XCTestCase+CoreDataHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +570,7 @@
 		};
 		BA1FB0F91EBBF611000B0671 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F34495D4EE6E3BC5B4EB92 /* Pods-EMS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EMS/Info.plist;
@@ -470,6 +583,7 @@
 		};
 		BA1FB0FA1EBBF611000B0671 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C93CB60D4838BDBC3300071 /* Pods-EMS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EMS/Info.plist;
@@ -518,6 +632,7 @@
 				BA0CD5321EBF161A00020485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA1FB0D11EBBF611000B0671 /* Build configuration list for PBXProject "EMS" */ = {
 			isa = XCConfigurationList;

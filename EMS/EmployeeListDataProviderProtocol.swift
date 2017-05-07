@@ -14,5 +14,5 @@ public protocol EmployeeListDataProviderProtocol: UITableViewDataSource {
     var managedObjectContext: NSManagedObjectContext? { get set }
     weak var tableView: UITableView! { get set }
     
-    func addEmployee(_ employee: Employee)
+    func getSelectedEmployee() -> Employee?
 }
