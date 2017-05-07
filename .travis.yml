@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode8.2
-xcode_project: EMS.xcodeproj
-xcode_scheme: EMS
+xcode_workspace: EMS.xcworkspace
+xcode_scheme: EMSTests
 xcode_sdk: iphonesimulator10.2
 before_install:
 - gem install xcpretty
