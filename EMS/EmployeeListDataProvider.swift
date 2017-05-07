@@ -28,7 +28,7 @@ open class EmployeeListDataProvider: NSObject, EmployeeListDataProviderProtocol 
     open func addEmployee(_ employee: Employee) {
         let context = self.fetchedResultsController.managedObjectContext
         let newEmployee = Employee(context: context)
-        newEmployee.timestamp = NSDate()
+        newEmployee.timestamp = Date()
         
         // Save the context.
         do {
