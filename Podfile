@@ -9,6 +9,6 @@ project 'EMS'
 target 'EMS' do
     project 'EMS.xcodeproj'
 
-    pod 'Eureka'
+    pod 'Eureka', '~> 2.0.1'
 
 end
