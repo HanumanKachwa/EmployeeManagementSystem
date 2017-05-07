@@ -54,13 +54,13 @@ open class _Employee: NSManagedObject {
     var email: String?
 
     @NSManaged open
-    var empID: String?
+    var empID: NSNumber?
 
     @NSManaged open
     var firstName: String?
 
     @NSManaged open
-    var gender: NSNumber?
+    var gender: String?
 
     @NSManaged open
     var joiningDate: Date?
@@ -69,7 +69,7 @@ open class _Employee: NSManagedObject {
     var lastName: String?
 
     @NSManaged open
-    var phoneNumber: NSNumber?
+    var phoneNumber: String?
 
     @NSManaged open
     var profilePicture: String?
